@@ -1,0 +1,19 @@
+GET http://localhost:7500/posts
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiT21vbG9sYSIsImlhdCI6MTYwODc3NTc3MSwiZXhwIjoxNjA4Nzc1ODkxfQ.h1yaXLGEtSssc-QipD5JYCyg6X68vpxJqm9SeVNwrwc 
+###
+
+POST http://localhost:8000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiT21vbG9sYSIsImlhdCI6MTYwODc3NTc3MX0.6yZqkQhqQ6Ylq9TLVLOUcoNbutmOm2DPXvzGLlJu_ME"
+}
+###
+
+
+POST http://localhost:8000/login
+Content-Type: application/json
+
+{
+    "username": "Omolola"
+}
